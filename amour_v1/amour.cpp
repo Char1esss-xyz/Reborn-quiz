@@ -26,7 +26,7 @@ public:
 
 int main()
 {
-    Mat image = imread("1.jpg"), binary, Gaussian, dilatee;
+    Mat image = imread("amour_1.jpg"), binary, Gaussian, dilatee;
     Mat element = getStructuringElement(MORPH_RECT, Size(5, 5));
     vector<vector<Point>> contours;
     vector<Vec4i> hierarchy;
