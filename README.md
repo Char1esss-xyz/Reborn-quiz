@@ -7,4 +7,4 @@ alpha beta滤波器介绍:[Wikipedia](https://en.wikipedia.org/wiki/Alpha_beta_f
 
 ## amour_v1:
 装甲板识别，[参考代码](https://blog.csdn.net/qq_40403096/article/details/107039702)<br>
-注：只能在'amour_1.jpg'上**完美**运行，判断条件仍需完善。
+注：只能在**amour_1.jpg**上**完美**运行，判断条件仍需完善。
