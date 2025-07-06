@@ -11,3 +11,6 @@ alpha beta滤波器介绍: [Wikipedia](https://en.wikipedia.org/wiki/Alpha_beta_
 
 ## quiz 2:
 弹道计算问题。建立好模型之后，直接迭代求解即可。
+
+## amour_v2:
+别急，已经新建文件夹了。:P
