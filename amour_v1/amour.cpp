@@ -26,7 +26,7 @@ public:
 
 int main()
 {
-    Mat image = imread("amour_1.jpg"), binary, Gaussian, dilatee;
+    Mat image = imread("amour_1.jpg"), binary, Gaussian;
     vector<vector<Point>> contours;
     vector<Vec4i> hierarchy;
     vector<Mat> channels;
@@ -51,8 +51,8 @@ int main()
         RotatedRect Light_Rec = minAreaRect(contours[i]);
 
         // 长宽比和轮廓面积比限制（由于要考虑灯条的远近都被识别到，所以只需要看比例即可）
-        // if (Light_Rec.size.width / Light_Rec.size.height > 2)
-        //     continue;
+        if (Light_Rec.size.height / Light_Rec.size.width > 2)
+            continue;
         lightInfos.push_back(LightDescriptor(Light_Rec));
     }
     
