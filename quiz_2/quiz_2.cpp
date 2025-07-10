@@ -13,7 +13,7 @@ int main()
     z = 0.25;
     v_0 = 17;
     k_1 = 0.0089;
-    theta = atan(0.005);                                    // 从1度开始
+    theta = atan(0.05);
     lr = 0.05;
     g = 9.8;
 
@@ -26,6 +26,7 @@ int main()
         // 建模
         time = expm1(k_1 * s) / (k_1 * v_0x);
         z_actual = v_0y * time - 0.5 * (g * pow(time, 2));
+        
         // 误差在0.01内
         if (abs(z_actual - z) < 0.01)
         {
