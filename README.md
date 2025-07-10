@@ -10,7 +10,32 @@ alpha beta滤波器介绍: [Wikipedia](https://en.wikipedia.org/wiki/Alpha_beta_
 注：只能在**amour_1.jpg**上**完美**运行，判断条件仍需完善。
 
 ## quiz 2:
-弹道计算问题。建立好模型之后，直接迭代求解即可。
+一个**误差反馈的迭代优化**题目，先对子弹运动建立好模型，然后通过高度的误差进行角的迭代。<br>
+>我最开始以为这是一个多解的问题，经过学长的点化后开悟原来学习率设置好是可以得到**运算速度快**且**全局最优解**的答案。
 
 ## amour_v2:
-别急，已经新建文件夹了。:P
+装甲板识别，相比较v1版本其实没有很多的优化，更多的是把v1的**图片**架构转换为**视频**的架构。<br>
+To do:
+- [ ] 优化判断条件
+
+## ROS2学习：
+### Node:
+Node负责单一、模块化的功能，类似于一个函数，可以
+- 订阅数据
+- 计算处理
+- 发布结果
+  
+但与函数不同的是，它是一个**独立的进程**。
+``` bash
+# 运行Node
+ros2 run <package_name> <executable_name>
+
+# 列出Node
+ros2 node list
+
+# 重映设
+ros2 run <package_name> <executable_name> --ros-args --remap __node:=name
+
+# 查询Node信息
+ros2 node info <node_name>
+```
